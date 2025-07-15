@@ -1,0 +1,12 @@
+# all vscode specific settings are not required to be tracked by git
+.vscode/
+
+# python environments
+.venv/
+!.venv\Lib\site-packages\ultralytics\cfg\trackers\new_botsort.yaml
+
+# excluding all run results
+runs/
+
+# all models except the ultralytics_YOLO_model (model for player tracking)
+*.pt
