@@ -59,8 +59,6 @@ for results_per_frame in results_generator:
 
 print("\n--- Tracking Summary ---")
 for track_id, frames_appeared in object_id_history.items():
-    if len(frames_appeared) > 1 and frames_appeared[-1] - frames_appeared[0] + 1 > len(frames_appeared):
-        print(f"  -> Object ID {track_id} likely disappeared and reappeared multiple times.")
     
     # checking gaps in frame numbers for a given ID if it is larger then 20 frames, then re-identification
     # is successful.
